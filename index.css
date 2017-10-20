@@ -1,53 +1,52 @@
-
-.main {
+#main {
     border: 1px solid #E6E6EA;
     width: 30%;
 }
 
-.main .page-title {
+#page-title {
     background-color: black;
     color: white;
     font-size: 30px;
     text-align: center;
 }
 
-.search {
+#search {
     width: 100%;
 }
 
-.logged-in {
+#logged-in {
     background-color: #EAEAEA;
     border-top: 1px solid #E6E6EA;
     border-bottom: 1px solid #E6E6EA;
     color: #6E6D74;
 }
 
-.chats .on-top {
+#chats .on-top {
     background-color: #EAEAEA;
 }
 
-.chats .chat {
+#chats .chat {
     border-bottom: 1px solid #E6E6EA;
 }
 
-.chats .chat > * {
+#chats .chat > * {
     display: inline-block;
 }
 
-.chats .chat .name {
+#chats .chat .name {
     font-size: 16px;
     font-weight: bold;
 }
 
-.chats .chat .content {
+#chats .chat .content {
     font-size: 13px;
     color: #A5A5A5;
 }
 
-.tabs > * {
+#tabs > * {
     display: inline-block;
 }
 
-.tabs .current-tab .title {
+#tabs .current-tab .title {
     color: #27AA28;
 }
