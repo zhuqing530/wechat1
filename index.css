@@ -1,3 +1,7 @@
-.tab-title {
+.tabs > * {
+    display: inline-block;
+}
+
+.chat > * {
     display: inline-block;
 }
