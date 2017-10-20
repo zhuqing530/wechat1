@@ -5,3 +5,15 @@
 .chat > * {
     display: inline-block;
 }
+
+.title {
+    background-color: black;
+}
+
+.logged-in {
+    background-color: #EAEAEA;
+}
+
+.on-top {
+    background-color: #EAEAEA;
+}
