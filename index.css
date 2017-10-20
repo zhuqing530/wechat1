@@ -11,26 +11,54 @@
 }
 
 #search {
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 5px;
+}
+
+#search form {
+    margin: 0;
+}
+
+#search form input {
+    border: 1px solid #E6E6EA;
     width: 100%;
+    height: 25px;
 }
 
 #logged-in {
-    background-color: #EAEAEA;
+    background-color: #F3F2F7;
     border-top: 1px solid #E6E6EA;
     border-bottom: 1px solid #E6E6EA;
     color: #6E6D74;
 }
 
 #chats .on-top {
-    background-color: #EAEAEA;
+    background-color: #F3F2F7;
 }
 
 #chats .chat {
     border-bottom: 1px solid #E6E6EA;
+    height: 60px;
+    padding: 5px;
 }
 
 #chats .chat > * {
     display: inline-block;
+    height: 100%;
+}
+
+#chats .chat .icon-panel {
+    width: 60px;
+    text-align: center;
+}
+
+#chats .chat .content-panel {
+    height: 100%;
+}
+
+#chats .chat .icon-panel .icon {
+    height: 50px;
 }
 
 #chats .chat .name {
@@ -43,10 +71,20 @@
     color: #A5A5A5;
 }
 
+#tabs {
+    background-color: #F5F3F5;
+    padding: 3px;
+}
+
 #tabs > * {
     display: inline-block;
 }
 
 #tabs .current-tab .title {
     color: #27AA28;
+}
+
+#tabs .title {
+    font-size: 13px;
+    text-align: center;
 }
