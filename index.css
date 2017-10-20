@@ -1,19 +1,53 @@
-.tabs > * {
-    display: inline-block;
+
+.main {
+    border: 1px solid #E6E6EA;
+    width: 30%;
 }
 
-.chat > * {
-    display: inline-block;
-}
-
-.title {
+.main .page-title {
     background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
 }
 
 .logged-in {
     background-color: #EAEAEA;
+    border-top: 1px solid #E6E6EA;
+    border-bottom: 1px solid #E6E6EA;
+    color: #6E6D74;
 }
 
-.on-top {
+.chats .on-top {
     background-color: #EAEAEA;
+}
+
+.chats .chat {
+    border-bottom: 1px solid #E6E6EA;
+}
+
+.chats .chat > * {
+    display: inline-block;
+}
+
+.chats .chat .name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chats .chat .content {
+    font-size: 13px;
+    color: #A5A5A5;
+}
+
+.tabs > * {
+    display: inline-block;
+}
+
+.tabs .current-tab .title {
+    color: #27AA28;
 }
