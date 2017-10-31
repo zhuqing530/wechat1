@@ -6,49 +6,49 @@
 
 #page-title {
     position: relative;
-    display: table;
     background-color: black;
     width: 100%;
     height: 60px;
 }
 
 .wechat {
-    display: table-cell;
+    display: flex;
+    flex-flow: column;
     text-align: center;
-    vertical-align: middle;
+    justify-content: center;
     height: 100%;
     color: white;
     font-size: 20px;
 }
 
-.plus-table {
+.plus-panel {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     top: 0;
     right: 0;
     height: 100%;
-    display: table;
     width: 60px;
 }
 
 .plus {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
     color: white;
     font-size: 20px;
 }
 
-#search {
+#search-panel {
     background-color: #EAEAEA;
     text-align: center;
     padding: 5px;
 }
 
-#search form {
+#search-panel form {
     margin: 0;
 }
 
-#search form input {
+#search-panel form input {
     border: 1px solid #E6E6EA;
     width: 100%;
     height: 25px;
@@ -63,22 +63,22 @@
     color: #6E6D74;
 }
 
-.img-computer {
+#logged-in .img-computer {
     flex: 0 0 60px;
     display: flex;
     flex-flow: column;
     text-align: center;
     justify-content: center;
 }
-.logged-in-content{
-    flex: 0 0 auto;
+
+#logged-in .content {
+    flex: 1 1 auto;
     display: flex;
     flex-flow: column;
-    text-align: center;
+    align-items: left;
     justify-content: center;
 }
 
-}
 #chats .on-top {
     background-color: #F3F2F7;
 }
@@ -88,17 +88,7 @@
     height: 60px;
     padding: 5px;
     display: flex;
-    flex-flow: row
-}
-
-#chats .chat > * {
-    display: inline-block;
-    height: 100%;
-}
-
-.icon {
-    height: 60px;
-    width: 60px;
+    flex-flow: row;
 }
 
 #chats .chat .icon-panel {
@@ -109,56 +99,63 @@
     align-items: center;
 }
 
+#chats .chat .icon-panel .icon {
+    height: 60px;
+    width: 60px;
+}
+
 #chats .chat .content-panel {
     flex: 1 1 auto;
     display: flex;
     flex-flow: column;
 }
 
-#chats .chat .name {
+#chats .chat .content-panel .name {
     flex: 0 0 30px;
-
     display: flex;
     flex-flow: column;
     justify-content: center;
-
     font-size: 16px;
     font-weight: bold;
 }
 
-#chats .chat .content {
+#chats .chat .content-panel .content {
     flex: 1 1 auto;
     font-size: 13px;
     color: #A5A5A5;
 }
 
 #tabs {
-    display:flex;
+    display: flex;
     flex-flow: row;
     background-color: #F5F3F5;
     padding: 3px;
     height: 80px;
 }
+
 #tabs .tab {
-    flex:1 1 25%;
+    flex: 1 1 25%;
     display: flex;
-    flex-flow:column;
+    flex-flow: column;
 }
+
 #tabs .tab .img {
-    flex:1 1 66%;
+    flex: 1 1 66%;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
 }
+
 #tabs .tab .title {
-    flex:1 1 34%;
+    flex: 1 1 34%;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    font-size:15px
+    font-size: 15px;
 }
+
 #tabs .current-tab .title {
     color: #27AA28;
 }
