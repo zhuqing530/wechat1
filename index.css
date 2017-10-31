@@ -12,10 +12,6 @@
 }
 
 .wechat {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     color: white;
     font-size: 20px;
@@ -23,10 +19,6 @@
 
 .plus {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     top: 0;
     right: 0;
     height: 100%;
@@ -62,10 +54,6 @@
 
 #logged-in .img-computer {
     flex: 0 0 60px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
 }
 
 #logged-in .content {
@@ -89,10 +77,6 @@
 
 #chats .chat .icon-panel {
     flex: 0 0 80px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #chats .chat .icon-panel .icon {
@@ -137,25 +121,22 @@
 
 #tabs .tab .img {
     flex: 1 1 66%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #tabs .tab .title {
     flex: 1 1 34%;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
 }
 
 #tabs .current-tab .title {
     color: #27AA28;
 }
 
-
+.both-center {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
 
     
