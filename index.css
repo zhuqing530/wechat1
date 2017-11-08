@@ -1,20 +1,38 @@
+div {
+    /*border: 1px solid red;*/
+}
+
+div {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: "Helvetica", "华文黑体", monospace;
+}
+
 #main {
     padding: 0;
-    border: 1px solid #E6E6EA;
-    width: 400px;
+    width: 432px;
+    height: 707px;
+    /*margin: 100px auto;*/
+    margin-left: 100px;
 }
 
 #page-title {
     position: relative;
-    background-color: black;
+    background-color: #312F35;
     width: 100%;
-    height: 60px;
+    height: 67px;
+    padding-top: 15px;
 }
 
 .wechat {
     height: 100%;
     color: white;
-    font-size: 20px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    padding-top: 5px;
 }
 
 .plus {
@@ -22,15 +40,19 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 60px;
+    width: 19px;
     color: white;
-    font-size: 20px;
+    font-size: 34px;
+    padding-top: 18px;
+    padding-right: 30px;
 }
 
 #search-panel {
-    background-color: #EAEAEA;
+    background-color: #F0EFF5;
     text-align: center;
-    padding: 5px;
+    padding: 8px;
+    height: 46px;
+    border-bottom: 1px solid #E6E6EA;
 }
 
 #search-panel form {
@@ -38,22 +60,36 @@
 }
 
 #search-panel form input {
-    border: 1px solid #E6E6EA;
+    border-radius: 4px;
+    border: 1px solid #E9E8ED;
     width: 100%;
-    height: 25px;
+    height: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#logged-in-all {
+    padding-left: 12px;
+    background-color: #F0EFF5;
 }
 
 #logged-in {
+    height: 54px;
     display: flex;
     flex-flow: row;
-    background-color: #F3F2F7;
-    border-top: 1px solid #E6E6EA;
     border-bottom: 1px solid #E6E6EA;
     color: #6E6D74;
 }
 
 #logged-in .img-computer {
-    flex: 0 0 60px;
+    flex: 0 0 73px;
+    padding-top: 3px;
+    padding-right: 11px;
+}
+
+#logged-in .img-computer img {
+    width: 54px;
+    height: 46px;
 }
 
 #logged-in .content {
@@ -61,27 +97,38 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
+    font-size: 17.5px;
+    padding: 27px 2px;
+}
+
+#chats {
+    height: 539px;
 }
 
 #chats .on-top {
+    padding-left: 12px;
     background-color: #F3F2F7;
+}
+
+#chats .normal {
+    padding-left: 12px;
 }
 
 #chats .chat {
     border-bottom: 1px solid #E6E6EA;
-    height: 60px;
-    padding: 5px;
+    height: 84.5px;
     display: flex;
     flex-flow: row;
 }
 
 #chats .chat .icon-panel {
-    flex: 0 0 80px;
+    flex: 0 0 75px;
 }
 
 #chats .chat .icon-panel .icon {
-    height: 60px;
-    width: 60px;
+    height: 63px;
+    width: 62px;
+    border-radius: 6px;
 }
 
 #chats .chat .content-panel {
@@ -91,26 +138,26 @@
 }
 
 #chats .chat .content-panel .name {
-    flex: 0 0 30px;
+    flex: 0 0 44px;
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 21px;
+    justify-content: flex-end;
 }
 
 #chats .chat .content-panel .content {
     flex: 1 1 auto;
-    font-size: 13px;
+    font-size: 17px;
     color: #A5A5A5;
 }
 
 #tabs {
     display: flex;
     flex-flow: row;
-    background-color: #F5F3F5;
+    background-color: #F6F4F5;
     padding: 3px;
-    height: 80px;
+    height: 61px;
+    border-top: 1px solid #D8D8D8;
 }
 
 #tabs .tab {
@@ -120,12 +167,19 @@
 }
 
 #tabs .tab .img {
-    flex: 1 1 66%;
+    flex: 1 1 auto;
+}
+
+#tabs .tab .img img {
+    width: 50px;
+    height: 32px;
 }
 
 #tabs .tab .title {
-    flex: 1 1 34%;
+    flex: 0 0 9px;
     display: flex;
+    font-size: 12px;
+    color: #999999;
 }
 
 #tabs .current-tab .title {
@@ -137,6 +191,12 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+}
+
+.center-left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
     
